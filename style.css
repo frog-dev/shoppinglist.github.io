@@ -1,11 +1,22 @@
 .hi{
 	float:left;
 	width:50%;
-	margin-left:5%;
 
 }
 
 .bye{
 	float:right;
 	width:50%;
+}
+
+#iTable{
+	
+	width:50%;
+	
+}
+
+#wTable{
+	
+	width:50%;
+	
 }
