@@ -1,3 +1,4 @@
+var socket = io();
 window.onload = function() {
   load()
 }
@@ -141,5 +142,6 @@ function iadd(t1,t2){
 }
 var database = firebase.database().ref()
 database.on('child_changed', function(snapshot){
+	socket.emit("update");
 	location.reload()
 });
