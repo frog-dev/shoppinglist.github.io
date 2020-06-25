@@ -7,46 +7,46 @@
 	<script src="/socket.io/socket.io.js"></script>
 	
 	<body>
-		<div id = "horizontal">
 			<div class = "hi">
 				<center><h2>Whole Foods</h2></center>
 			</div>
 			<div class = "bye">
 				<center><h2>Indian Store</h2></center>
 			</div>
-			<div class = "hi">
-				<table id = "wTable" class="table table-bordered">
-				  <thead class = "thead">
-					<tr>
-					  <th scope="col">Item</th>
-					  <th scope="col">Amt</th>
-					  <th scope="col"></th>
-					</tr>
-				  </thead>
-				  <tbody>
-				  </tbody>
-				</table>
-				<br>
-				<br>
-				<center><button type="button" onclick = "wadd('','')" class="btn btn-success">Add Item</button></center>
+			<div class = "row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<table id = "wTable" class="table table-bordered">
+			  <thead class = "thead">
+				<tr>
+				  <th scope="col">Item</th>
+				  <th scope="col">Amt</th>
+				  <th scope="col"></th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  </tbody>
+			</table>
+			<center><button type="button" onclick = "wadd('','')" class="btn btn-success">Add Item</button></center>
+			<br>
+			<br>
 			</div>
-			<div class = "bye" >
-				<table id = "iTable" class="table table-bordered">
-				  <thead class = "thead">
-					<tr>
-					  <th scope="col">Item</th>
-					  <th scope="col">Amt<th>
-					  <th scope="col"></th>
-					</tr>
-				  </thead>
-				  <tbody>
-				  </tbody>
-				</table>
-				<br>
-				<br>
-				<center><button type="button" onclick = "iadd('','')" class="btn btn-success">Add Item</button></center>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<table id = "iTable" class="table table-bordered">
+			  <thead class = "thead">
+				<tr>
+				  <th scope="col">Item</th>
+				  <th scope="col">Amt<th>
+				  <th scope="col"></th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  </tbody>
+			</table>
+			<center><button type="button" onclick = "iadd('','')" class="btn btn-success">Add Item</button></center>
+			<br>
+			<br>
 			</div>
-		</div>
+			</div>
 	
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"> 
